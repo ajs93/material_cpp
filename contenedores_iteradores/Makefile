@@ -2,6 +2,8 @@ EXAMPLES := array
 
 OUTPUT_DIR := $(CURDIR)/output
 
+all: build
+
 .PHONY: build
 
 build: | $(OUTPUT_DIR)
