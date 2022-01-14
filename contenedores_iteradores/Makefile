@@ -1,4 +1,8 @@
-EXAMPLES := array
+EXAMPLES := array \
+						vector \
+						deque \
+						list \
+						map
 
 OUTPUT_DIR := $(CURDIR)/output
 
@@ -23,4 +27,5 @@ clean:
 	@for e in $(EXAMPLES); do \
 		$(MAKE) -C $$e clean; \
 	done
+	rm -rf $(OUTPUT_DIR)
 	@echo -e "Cleaned"

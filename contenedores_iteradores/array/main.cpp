@@ -1,22 +1,12 @@
 // Inclusion para el uso de la clase std::array
 #include <array>
 
-// Inclusion para el uso de std::cin y std::cout
+// Inclusion para el uso de std::cin, std::cout, std::cerr
 #include <iostream>
 
 // Cantidad de numeros a ingresar por el usuario
 #define   NUMEROS_A_INGRESAR    (5)
 
-/**
- * @brief Punto de entrada de nuestro programa
- * 
- * Este programa basico demuestra la utilizacion de la clase std::array
- * como contenedor de numeros ingresados por consola por el usuario.
- * Luego se imprimen dichos numeros uno por uno, iterando a traves del
- * contenedor.
- * 
- * @return int Codigo de finalizacion del programa
- */
 int main() {
   // Notese que esta clase necesita dos variables de template:
   // - Tipo de datos que se van a alojar en el array
