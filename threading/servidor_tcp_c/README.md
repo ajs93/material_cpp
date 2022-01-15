@@ -10,4 +10,4 @@ El servidor estará escuchando en todas las interfaces y en particular, en el pu
 
 En el siguiente diagrama se boceta la idea principal de los componentes *servidor* y *cliente*:
 
-![Funcionamiento basico](threading/servidor_tcp_c/diagrams/funcionamiento.png)
+![Funcionamiento basico](diagramas/funcionamiento.png)
