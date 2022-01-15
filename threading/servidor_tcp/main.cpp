@@ -19,10 +19,9 @@ static void sigint_handler(int sig) {
 int main() {
   struct sigaction new_handler = {{0}}, old_handler = {{0}};
   new_handler.sa_handler = sigint_handler;
-  if (sigaction(SIGINT, &new_handler, &old_handler) == -1)
-  {
-    perror("sigaction");
-    exit(EXIT_FAILURE);
+  if (sigaction(SIGINT, &new_handler, &old_handler) == -1) {
+    perror("Error en sigaction");
+    return -1;
   }
 
   try {
